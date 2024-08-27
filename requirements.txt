@@ -1,0 +1,15 @@
+langchain 
+langchain_community 
+tqdm 
+langchain-openai 
+langchain-mistralai
+langchain_chroma
+chromadb
+streamlit
+transformers
+sentencepiece
+torch
+pypdf
+mistral_inference
+mistral_common
+mistralai
