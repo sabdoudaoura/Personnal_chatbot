@@ -116,7 +116,6 @@ def QA_api_w_memory(chroma_client, db, llm, embeddings=embeddings):
     ]
 )
 
-    #memory
     contextualize_q_system_prompt = (
         "Given a chat history and the latest user question "
         "which might reference context in the chat history, "
@@ -174,7 +173,6 @@ def QA_local(query, embeddings=embeddings):
 
     out_tokens, _ = generate([tokens], model, max_tokens=1000, temperature=temperature, eos_id=tokenizer.instruct_tokenizer.tokenizer.eos_id)
     result = tokenizer.instruct_tokenizer.tokenizer.decode(out_tokens[0])
-
 
     return result, sources
 
